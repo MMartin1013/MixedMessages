@@ -1,6 +1,10 @@
+//Adds a function to generate a random number
+const rand = () => {
+    return Math.floor(Math.random() * 3);
+}
+
 //Mixed messages ot be printed ot the console
 const messages = {
-    references : ["Spongebob","Avatar","Adventure Time"],
     jokes : ["What did the Triangle say to the Circle? You're so pointless! ;)", "Why does a moon rock taste better than an earth rock? Because its meteor! ;)","Why can't a nose be 12 inches? Because then it would be a foot! ;)"],
     advice : ["Don't let your efforts be for nothing","Knowledge is nothing without action", "Don't forget to give yourself a break"]
 
@@ -14,8 +18,9 @@ const referencesList = {
 
 }
 
+//Generates the Mixed message based off of random values
 const getMessage = () => {
-    let randomReference = Math.floor(Math.random() * 3);
+    let randomReference = rand();
     switch (randomReference){
         case 0:
             randomReference = "Spongebob";
@@ -28,10 +33,12 @@ const getMessage = () => {
             break;
     }
 
-    let rand = Math.floor(Math.random() * 3);
-    console.log(referencesList[randomReference][rand])
-        
+    console.log(referencesList[randomReference][rand()]);
 
+    for(let key in messages){
+        console.log(messages[key][rand()]);
+    }
 }
 
 getMessage();
+
