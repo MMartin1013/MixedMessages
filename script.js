@@ -14,3 +14,24 @@ const referencesList = {
 
 }
 
+const getMessage = () => {
+    let randomReference = Math.floor(Math.random() * 3);
+    switch (randomReference){
+        case 0:
+            randomReference = "Spongebob";
+            break;
+        case 1:
+            randomReference = "Avatar";
+            break;
+        case 2:
+            randomReference = "AdventureTime";
+            break;
+    }
+
+    let rand = Math.floor(Math.random() * 3);
+    console.log(referencesList[randomReference][rand])
+        
+
+}
+
+getMessage();
