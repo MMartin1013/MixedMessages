@@ -33,11 +33,9 @@ const getMessage = () => {
             break;
     }
 
-    console.log(referencesList[randomReference][rand()]);
-
-    for(let key in messages){
-        console.log(messages[key][rand()]);
-    }
+    console.log(randomReference + " quote: " + referencesList[randomReference][rand()]);
+    console.log("Joke: " + messages["jokes"][rand()]);
+    console.log("Advice: " + messages["advice"][rand()]);
 }
 
 getMessage();
