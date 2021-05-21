@@ -6,3 +6,11 @@ const messages = {
 
 }
 
+//Reference list for the shows
+const referencesList = {
+    Spongebob : ["I\'m ugly and I\'m proud","The best time to wear a striped sweater is all the time","Hi, how are ya?"],
+    Avatar : ["Fire is life, not just destruciton", "Destiny is a funny thing","That\'s rough buddy"],
+    AdventureTime : ["Bad biscuits make the baker broke","You gotta focus on what is real", "Responsibility demands sacrifice"]
+
+}
+
